@@ -1,0 +1,9 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx-service
+
+spec: 
+  type: ClusterIP
+  selector:
+    app: nginx-web
