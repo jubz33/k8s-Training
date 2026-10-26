@@ -1,0 +1,9 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: nginx-config
+ 
+data:
+  APP_NAME: DevOps-Lab
+  APP_ENV: development
+  APP_VERSION: "1.0"
