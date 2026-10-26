@@ -19,3 +19,6 @@ spec:
       containers:
       - name: nginx
         image: nginx:alpine
+        envFrom:
+        - configMapRef:
+            name: nginx-config
