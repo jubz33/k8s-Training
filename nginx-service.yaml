@@ -7,3 +7,7 @@ spec:
   type: ClusterIP
   selector:
     app: nginx-web
+  ports:
+    - port: 8080 ##port service will expose##
+      targetPort: 80 ##port container listening on##
+      protocol: TCP
