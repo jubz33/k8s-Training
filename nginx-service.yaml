@@ -4,10 +4,10 @@ metadata:
   name: nginx-service
 
 spec: 
-  type: ClusterIP
+  type: NodePort
   selector:
     app: nginx-web
   ports:
-    - port: 8080 ##port service will expose##
+    - port: 30080 ##port service will expose##
       targetPort: 80 ##port container listening on##
       protocol: TCP
