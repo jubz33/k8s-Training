@@ -1,2 +1,3 @@
 # Local troubleshooting logs and recovery artifacts
 /diagnostics/
+.env
