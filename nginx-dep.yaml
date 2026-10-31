@@ -22,3 +22,9 @@ spec:
         envFrom:
         - configMapRef:
             name: nginx-config
+        env:
+          - name: DB_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: db-credentials
+                key: username
